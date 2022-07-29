@@ -1,12 +1,8 @@
-var express = require("express");
-var router = express.Router();
+const { Router } = require("express");
+const controllers = require("../controllers/index");
 
-/* GET home page. */
-// router.get("/", function (req, res, next) {
-//   res.render("index", { title: "Kennie! Elastic Beanstalk App" });
-// });
-router.get("/", function (req, res, next) {
-  res.send("Welcome to Kennie, Elastic Beanstalk App.");
-});
+const router = new Router();
+router.get("/", controllers.home);
+router.get("/users", controllers.users);
 
 module.exports = router;
