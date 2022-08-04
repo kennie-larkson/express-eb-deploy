@@ -9,6 +9,8 @@ const validateEnv = () => {
     POSTGRES_USER: str(),
     POSTGRES_PASSWORD: str(),
     POSTGRES_DB: str(),
+    REDIS_URL: str(),
+    REDIS_PASSWORD: str(),
     JWT_ACCESS_TOKEN_PRIVATE_KEY: str(),
     JWT_ACCESS_TOKEN_PUBLIC_KEY: str(),
     JWT_REFRESH_TOKEN_PRIVATE_KEY: str(),

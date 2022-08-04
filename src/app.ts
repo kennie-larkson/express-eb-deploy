@@ -16,6 +16,8 @@ AppDataSource.initialize()
     // MIDDLEWARE
 
     // 1. Body parser
+    app.use(express.json());
+    app.use(express.urlencoded({ extended: false }));
 
     // 2. Logger
 
