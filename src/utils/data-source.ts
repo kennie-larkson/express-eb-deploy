@@ -9,7 +9,7 @@ const postgresConfig = config.get<{
   username: string;
   password: string;
   database: string;
-}>("postgresConfig");
+}>("livePostgresConfig");
 
 export const AppDataSource = new DataSource({
   ...postgresConfig,

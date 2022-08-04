@@ -26,9 +26,9 @@ AppDataSource.initialize()
     // 4. Cors
 
     // ROUTES
-    Routes.forEach((route) => {
-      return route.controller, route.method, route.route;
-    });
+    // Routes.forEach((route) => {
+    //   return route.controller, route.method, route.route;
+    // });
 
     // HEALTH CHECKER
     app.get("/api/healthchecker", async (_, res: Response) => {
